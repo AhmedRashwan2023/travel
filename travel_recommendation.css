@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-section,
+.contact-section {
+  padding: 80px 120px;
+  color: #fff;
+}
+
+.about-text p {
+  max-width: 900px;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.team-section {
+  margin-top: 60px;
+}
+
+.team-section h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+}
+
+.team-card h3 {
+  margin: 10px 0;
+}
+
+.team-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.avatar {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.role {
+  display: inline-block;
+  margin-top: 15px;
+  background: #e63946;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* CONTACT */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.contact-form {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 30px;
+  width: 420px;
+  border-radius: 12px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #e63946;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #c72d39;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('assets/bg.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo i {
+  color: #e63946;
+  font-size: 26px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 320px;
+}
+
+.search-box button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e63946;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #e63946;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 140px;
+}
+.hero-search-values {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  visibility: hidden;
+}
+
+.search-image {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.hero-title h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.hero-desc {
+  padding: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 420px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c72d39;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 40px;
+  }
+
+  .hero-title h1 {
+    font-size: 40px;
+  }
+
+  .social {
+    display: none;
+  }
+}
